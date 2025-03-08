@@ -41,13 +41,13 @@ router.get("/ping", (req, res) => {
  *         content:
  *           text/plain:
  *             schema:
- *               type: integer
+ *               type: boolean
  *           application/json:
  *             schema:
- *               type: integer
+ *               type: boolean
  *           text/json:
  *             schema:
- *               type: integer
+ *               type: boolean
  */
 router.post("/challenge-1", (req, res) => {
   const result = challenges.challenge1(req.body);
@@ -109,13 +109,13 @@ router.post("/challenge-2", (req, res) => {
  *         content:
  *           text/plain:
  *             schema:
- *               type: boolean
+ *               type: integer
  *           application/json:
  *             schema:
- *               type: boolean
+ *               type: integer
  *           text/json:
  *             schema:
- *               type: boolean
+ *               type: integer
  */
 router.post("/challenge-3", (req, res) => {
   const result = challenges.challenge3(req.body);
